@@ -44,4 +44,4 @@ Second 200 - Ajie
 Next 200 - Riththi
 
 ## Images
-Using the images in assests folder
+Using the images in assets folder
