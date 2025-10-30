@@ -42,3 +42,6 @@ Every persons take 200 lines
 First 200 - Roni
 Second 200 - Ajie
 Next 200 - Riththi
+
+## Images
+Using the images in assests folder
