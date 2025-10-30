@@ -48,4 +48,4 @@ Using the images in assets folder
 
 ## line 
 **Ajie** Using html line 200 - 327 and css 1 - 222 lines as my code
-**Riththi** using html line 81 - 197 and css 223 - 321 lines as my code
+**Riththi** using html line 81 - 197 and css 223 - 321 lines as my code for card section
