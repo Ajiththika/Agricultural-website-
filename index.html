@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agriculture</title>
+    <title>AgroNex</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJc5f5t7m/c16fXm8yK98tBfKq9P4gY3Z2Z3v5tV6M2Z8tN6w7E3E5C7O7o6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,74 +11,127 @@
 </head>
 <body>
     
-<<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top text-warning">
-    <div class="container-fluid">
-        <a class="navbar-brand text-success fw-bold" href="#">
-            <i class="fa-solid fa-leaf">AgriVerse</i>
-        </a>
+<!-- Fixed Transparent/Glass Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glass shadow-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand text-success fw-bold text-lg" href="#">
+                <i class="fa-solid fa-leaf text-agri-yellow me-2"></i>
+                <span class="text-white text-2xl font-monospace ">AgroNex</span>
+            </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#agriNavbarContentLight" aria-controls="agriNavbarContentLight" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#agriNavbarContent" aria-controls="agriNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="agriNavbarContent">
+
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white hover:text-agri-yellow" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-white" href="#technology-platform">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#solutions">Solutions</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white" href="#contact" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-success fw-bold rounded-pill shadow-sm" type="submit" data-bs-toggle="modal" 
+                data-bs-target="#loginModal">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Hero Section -->
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+        
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            
+            <!-- Item 1 -->
+            <div class="carousel-item active">
+                <img src="./Assets/h13" class="d-block w-100" alt="Sustainable Farming">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="caption-overlay"></div>
+                    <div class="caption-content container p-5">
+                        <p class="lead text-agri-yellow text-uppercase fw-semibold mb-2">Future of Food</p>
+                        <h1 class="display-3 fw-bolder text-white mb-4 shadow-text">
+                            Farm-to-Table Freshness, Delivered.
+                        </h1>
+                        <p class="lead text-white-50 mb-5 fs-5 shadow-text">
+                            Connecting you directly to local, sustainable farms for the highest quality produce.
+                            <i class="fa-solid fa-seedling text-agri-yellow ms-1"></i>
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                           <button class="btn btn-success btn-lg px-5 py-3 fw-bold shadow-lg rounded-pill" type="submit" data-bs-toggle="modal" 
+                                        data-bs-target="#loginModal">Login</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="carousel-item">
+                <img src="./Assets/smart farming" class="d-block w-100" alt="Precision Agriculture">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="caption-overlay"></div>
+                    <div class="caption-content container p-5">
+                        <p class="lead text-agri-yellow text-uppercase fw-semibold mb-2">Smart Farming</p>
+                        <h1 class="display-3 fw-bolder text-white mb-4 shadow-text">
+                            Revolutionizing Agriculture with Smart Farming Intelligence.
+                        </h1>
+                        <p class="lead text-white-50 mb-5 fs-5 shadow-text">
+                            Empowering farmers with AI-driven insights, precision sensors, and automated irrigation — transforming every drop of water and every acre into maximum yield.
+                        </p>
+                        <a href="#technology-platform" class="btn btn-success btn-lg px-5 py-3 fw-bold shadow-lg rounded-pill">
+                            Explore Technology
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="carousel-item">
+                <img src="./Assets/h2" class="d-block w-100" alt="Farm-to-Table Quality">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="caption-overlay"></div>
+                    <div class="caption-content container p-5">
+                        <p class="lead text-agri-yellow text-uppercase fw-semibold mb-2">Verified Success Stories</p>
+                        <h1 class="display-3 fw-bolder text-white mb-4 shadow-text">
+                            Traceability You Can Trust.
+                        </h1>
+                        <a href="#varified" class="btn btn-agri-yellow btn-lg px-5 py-3 fw-bold shadow-lg rounded-pill text-agri-green">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls in hero -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-
-        <div class="collapse navbar-collapse" id="agriNavbarContentLight">
-
-            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link active text-success" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Technology</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Solutions</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Contact
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Get Directions</a></li>
-                        <li><a class="dropdown-item" href="#">Contact Form</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <form class="d-flex" role="search">
-                <button class="btn btn-success fw-bold" type="submit">Login</button>
-            </form>
-        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-</nav>
 
-<header class="hero-section hero-background d-flex align-items-center justify-content-center text-center">
-
-
-    <div class="container hero-content p-5">
-
-        <h1 class="display-3 fw-bolder text-success mb-3">
-            Farm-to-Table Freshness, Delivered.
-        </h1>
-
-        <p class="lead text-black mb-5 fs-4">
-            Connecting you directly to local, sustainable farms for the highest quality produce.
-            <i class="fa-solid fa-seedling text-warning ms-1"></i>
-        </p>
-
-        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-
-            <a href="#shop" class="btn btn-warning btn-lg px-5 py-3 fw-bold shadow-lg text-success">
-                <i class="fa-solid fa-basket-shopping me-2"></i> Shop Produce
-            </a>
-
-            <a href="#mission" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold shadow-lg">
-                <i class="fa-solid fa-leaf me-2"></i> Our Sustainable Mission
-            </a>
-        </div>
-    </div>
-</header>
-
-<section class="py-5 text-center">
+<section id="solutions" class="py-5 text-center">
     <div class="container">
       <p class="core-value-text mb-2">OUR CORE VALUE</p>
       <h2 class="section-title mb-5">Intelligent Automation for Every Farm</h2>
@@ -137,331 +190,282 @@
     </div>
   </section>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- Our Technology Platform (Section 4 from Image 4) -->
-         <section id="technology" class="py-5">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="section-title">Our Technology Platform</h2>
-                    <div class="section-separator"></div>
+         <section id="technology-platform" class="py-5 py-xl-6 bg-light">
+    <div class="container-xxl">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 offset-lg-2">
+                <h2 class="display-4 fw-bold text-dark">Our Technology Platform</h2>
+                <p class="lead text-secondary mt-3">The integrated engine powering a new era of precision agriculture.</p>
+            </div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+            
+            <div class="col-lg-7">
+                <div class="p-4 p-md-5 h-100 bg-white shadow-lg rounded-4 border border-secondary border-opacity-10">
+                    
+                    <ul class="nav nav-pills nav-fill mb-4 p-1 bg-light rounded-3" id="techTabsPolished" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-semibold" id="sensors-tab-p" data-bs-toggle="pill" data-bs-target="#sensors-p" type="button" role="tab" aria-controls="sensors-p" aria-selected="true">Smart Sensors</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-semibold" id="analytics-tab-p" data-bs-toggle="pill" data-bs-target="#analytics-p" type="button" role="tab" aria-controls="analytics-p" aria-selected="false">AI Analytics</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-semibold" id="control-tab-p" data-bs-toggle="pill" data-bs-target="#control-p" type="button" role="tab" aria-controls="control-p" aria-selected="false">Control Systems</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-semibold" id="monitoring-tab-p" data-bs-toggle="pill" data-bs-target="#monitoring-p" type="button" role="tab" aria-controls="monitoring-p" aria-selected="false">Remote Monitoring</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="techTabsContentPolished">
+                        
+                        <div class="tab-pane fade show active" id="sensors-p" role="tabpanel" aria-labelledby="sensors-tab-p">
+                            <h3 class="fw-bold mb-3 text-primary">Precision Soil & Crop Monitoring</h3>
+                            <p class="text-secondary fs-5">Our wireless sensor network provides **real-time data** on soil moisture, temperature, salinity, and crop health at multiple depths across your fields.</p>
+                            <ul class="list-unstyled space-y-2 mt-4">
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Multi-depth soil moisture sensing</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Canopy temperature monitoring</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Wireless data transmission</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> **3+ year** battery life</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary btn-lg mt-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#SensorsModal">
+                                View Full Feature Details
+                            </button>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="analytics-p" role="tabpanel" aria-labelledby="analytics-tab-p">
+                            <h3 class="fw-bold mb-3 text-primary">AI-Powered Data Interpretation</h3>
+                            <p class="text-secondary fs-5">Leverage advanced machine learning algorithms to transform raw sensor data into **actionable insights**, predicting crop needs and optimizing schedules.</p>
+                            <ul class="list-unstyled space-y-2 mt-4">
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Predictive irrigation scheduling</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Disease and pest early detection</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Nutrient deficiency analysis</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> **Yield forecasting** accuracy</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary btn-lg mt-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#AnalyticsModal">
+                                View Full Feature Details
+                            </button>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="control-p" role="tabpanel" aria-labelledby="control-tab-p">
+                            <h3 class="fw-bold mb-3 text-primary">Automated & Remote Control</h3>
+                            <p class="text-secondary fs-5">Manage your entire irrigation system from anywhere with our intelligent control units, integrated with sensors and AI for **autonomous operation**.</p>
+                            <ul class="list-unstyled space-y-2 mt-4">
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Centralized control dashboard</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Zone-specific micro-irrigation</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Integration with existing infrastructure</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> **Real-time valve management**</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary btn-lg mt-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#ControlModal">
+                                View Full Feature Details
+                            </button>
+                        </div>
+
+                        <div class="tab-pane fade" id="monitoring-p" role="tabpanel" aria-labelledby="monitoring-tab-p">
+                            <h3 class="fw-bold mb-3 text-primary">Anywhere, Anytime Farm Overview</h3>
+                            <p class="text-secondary fs-5">Access live farm data, system status, and alerts directly from your mobile device or desktop, ensuring **peace of mind** and proactive management.</p>
+                            <ul class="list-unstyled space-y-2 mt-4">
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Real-time data visualization</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Customizable alerts and notifications</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Multi-farm management capabilities</li>
+                                <li class="d-flex align-items-start mb-2"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Secure data access</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary btn-lg mt-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#MonitoringModal">
+                                View Full Feature Details
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <ul class="nav nav-pills mb-3 justify-content-center justify-content-lg-start" id="techTabs" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="smartSensors-tab" data-bs-toggle="pill" data-bs-target="#smartSensors" type="button" role="tab" aria-controls="smartSensors" aria-selected="true">Smart Sensors</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="aiAnalytics-tab" data-bs-toggle="pill" data-bs-target="#aiAnalytics" type="button" role="tab" aria-controls="aiAnalytics" aria-selected="false">AI Analytics</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="controlSystems-tab" data-bs-toggle="pill" data-bs-target="#controlSystems" type="button" role="tab" aria-controls="controlSystems" aria-selected="false">Control Systems</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="remoteMonitoring-tab" data-bs-toggle="pill" data-bs-target="#remoteMonitoring" type="button" role="tab" aria-controls="remoteMonitoring" aria-selected="false">Remote Monitoring</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content pt-3" id="techTabsContent">
-                            <div class="tab-pane fade show active" id="smartSensors" role="tabpanel" aria-labelledby="smartSensors-tab">
-                                <h4 class="fw-bold mb-3">Precision Soil & Crop Monitoring</h4>
-                                <p class="text-muted">Our wireless sensor network provides real-time data on soil moisture, temperature, salinity, and crop health at multiple depths across your fields.</p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Multi-depth soil moisture sensing</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Canopy temperature monitoring</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Wireless data transmission</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> 3+ year battery life</li>
-                                </ul>
-                                <a href="#" class="btn btn-primary-custom mt-3" data-bs-toggle="modal" data-bs-target="#smartSensorsModal">
-                                    Request Demo (Details)
-                                </a>
+            </div>
+
+            <div class="col-lg-5">
+                <div id="primaryTechCarousel" class="carousel slide h-100 position-relative rounded-4 overflow-hidden shadow-lg border border-secondary border-opacity-10" data-bs-ride="carousel">
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#primaryTechCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#primaryTechCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#primaryTechCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#primaryTechCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100">
+                            <img src="./Assets/smart sensors" class="d-block w-100 h-100 object-fit-cover" alt="Real-time soil health data display." style="min-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block text-start p-3 position-absolute bottom-0 start-0 w-100">
+                                <h4 class="fw-bold text-white" style="background-color: rgba(0,0,0,0.4); display: inline-block; padding: 5px 10px; border-radius: 5px;">Real-time Soil & Crop Health Data</h4>
                             </div>
-                            <div class="tab-pane fade" id="aiAnalytics" role="tabpanel" aria-labelledby="aiAnalytics-tab">
-                                <h4 class="fw-bold mb-3">AI-Powered Data Interpretation</h4>
-                                <p class="text-muted">Leverage advanced machine learning algorithms to transform raw sensor data into actionable insights, predicting crop needs and optimizing irrigation schedules.</p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Predictive irrigation scheduling</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Disease and pest early detection</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Nutrient deficiency analysis</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Yield forecasting</li>
-                                </ul>
-                                <a href="#" class="btn btn-primary-custom mt-3" data-bs-toggle="modal" data-bs-target="#aiAnalyticsModal">
-                                    Learn More (Details)
-                                </a>
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="./Assets/scan2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Automated system managing a field." style="min-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block text-start p-3 position-absolute bottom-0 start-0 w-100">
+                                <h4 class="fw-bold text-white" style="background-color: rgba(0,0,0,0.4); display: inline-block; padding: 5px 10px; border-radius: 5px;">Automated Control Systems</h4>
                             </div>
-                            <div class="tab-pane fade" id="controlSystems" role="tabpanel" aria-labelledby="controlSystems-tab">
-                                <h4 class="fw-bold mb-3">Automated & Remote Control</h4>
-                                <p class="text-muted">Manage your entire irrigation system from anywhere with our intelligent control units, integrated with sensors and AI for autonomous operation.</p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Centralized control dashboard</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Zone-specific irrigation</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Integration with existing infrastructure</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Real-time valve management</li>
-                                </ul>
-                                <a href="#" class="btn btn-primary-custom mt-3" data-bs-toggle="modal" data-bs-target="#controlSystemsModal">
-                                    See Features (Details)
-                                </a>
+                        </div>
+                        
+                        <div class="carousel-item h-100">
+                            <img src="./Assets/Natural crop" class="d-block w-100 h-100 object-fit-cover" alt="AI Dashboard and Analytics." style="min-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block text-start p-3 position-absolute bottom-0 start-0 w-100">
+                                <h4 class="fw-bold text-white" style="background-color: rgba(0,0,0,0.4); display: inline-block; padding: 5px 10px; border-radius: 5px;">Predictive AI Modeling in Action</h4>
                             </div>
-                            <div class="tab-pane fade" id="remoteMonitoring" role="tabpanel" aria-labelledby="remoteMonitoring-tab">
-                                <h4 class="fw-bold mb-3">Anywhere, Anytime Farm Overview</h4>
-                                <p class="text-muted">Access live farm data, system status, and alerts directly from your mobile device or desktop, ensuring peace of mind and proactive management.</p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Real-time data visualization</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Customizable alerts and notifications</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Multi-farm management capabilities</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Secure data access</li>
-                                </ul>
-                                <a href="#" class="btn btn-primary-custom mt-3" data-bs-toggle="modal" data-bs-target="#remoteMonitoringModal">
-                                    View Dashboard (Details)
-                                </a>
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="./Assets/remote monitoring" class="d-block w-100 h-100 object-fit-cover" alt="AI Dashboard and Analytics." style="min-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block text-start p-3 position-absolute bottom-0 start-0 w-100">
+                                <h4 class="fw-bold text-white" style="background-color: rgba(0,0,0,0.4); display: inline-block; padding: 5px 10px; border-radius: 5px;">Predictive AI Modeling in Action</h4>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                        <div id="techMainCarousel" class="carousel slide carousel-fade shadow-lg rounded-4" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#techMainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#techMainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#techMainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#techMainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner rounded-4">
-                                <div class="carousel-item active">
-                                    <img src="./Assets/Monitoring crops" class=" w-100 h-100" alt="Monitoring Crops">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h3>Global Overview</h3>
-                                        <p>Monitor all fields and devices in a single, unified map view.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./Assets/ai predictive analytics" class=" w-100 h-100" alt="AI Interface">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h3>Predictive AI Engine</h3>
-                                        <p>7-day forecasts to automate irrigation schedules perfectly.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./Assets/Automation-Farming" class=" w-100 h-100" alt="Remote Control">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h3>Automated Control</h3>
-                                        <p>Hands-free management of valves, pumps, and pivots.</p>
-                                    </div>
-                                </div>
-                                 <div class="carousel-item">
-                                    <img src="./Assets/crop monitoring" class=" w-100 h-100" alt="Remote Control">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h3>Remote Monitoring</h3>
-                                        <p>Hands-free management of valves, pumps, and pivots.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#techMainCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#techMainCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#primaryTechCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#primaryTechCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </section>
+        </div>
+
+<div class="modal fade" id="SensorsModal" tabindex="-1" aria-labelledby="SensorsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold" id="SensorsModalLabel">Full Details: Smart Sensors</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="lead">Our core sensor technology delivers unparalleled accuracy for all vital field metrics.</p>
+                        <h6 class="fw-bold mt-4">Sensor Technology Highlights:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-geo-alt-fill text-info me-2"></i> **Mesh Network:** Ensures 99% field connectivity and data reliability.</li>
+                            <li><i class="bi bi-thermometer-high text-danger me-2"></i> **Thermal Mapping:** Detect crop-level temperature anomalies early.</li>
+                            <li><i class="bi bi-battery-half text-warning me-2"></i> **Power Efficiency:** Solar-charged batteries with 5+ years of operational life.</li>
+                            <li><i class="bi bi-cloud-check-fill text-success me-2"></i> **Auto-Calibration:** Maintains data integrity season after season without manual input.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="uploaded:Screenshot from 2025-10-31 00-53-09.png-3d8ad3e0-3b11-4ff9-9255-d83b26dbbcfe" class="img-fluid rounded-3 shadow-sm mb-3" alt="Close-up view of a multi-depth soil sensor device.">
+                        <p class="small text-muted">Real-Time Salinity Tracking: Measure EC levels to prevent nutrient lock-up.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="AnalyticsModal" tabindex="-1" aria-labelledby="AnalyticsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold" id="AnalyticsModalLabel">Full Details: AI Analytics</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="lead">Our predictive engine crunches data points to provide actionable, easy-to-understand recommendations.</p>
+                        <h6 class="fw-bold mt-4">AI Features:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-graph-up text-info me-2"></i> **Optimization:** Up to 30% reduction in water and fertilizer use.</li>
+                            <li><i class="bi bi-clock-history text-danger me-2"></i> **Historical Modeling:** Analyzes past seasons to refine current predictions.</li>
+                            <li><i class="bi bi-puzzle-fill text-warning me-2"></i> **Pattern Detection:** Identifies subtle changes indicating early disease or pest issues.</li>
+                            <li><i class="bi bi-cloud-check-fill text-success me-2"></i> **Scenario Planning:** Test "what-if" irrigation strategies before deployment.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="uploaded:Screenshot from 2025-10-31 00-53-09.png-4424fe01-685d-46fb-982f-2db542a206ed" class="img-fluid rounded-3 shadow-sm mb-3" alt="Dashboard showing AI predictive charts and data.">
+                        <p class="small text-muted">Predictive Irrigation: Get a 7-day forecast to automate schedules perfectly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ControlModal" tabindex="-1" aria-labelledby="ControlModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold" id="ControlModalLabel">Full Details: Control Systems</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="lead">Hands-free, intelligent control of all field hardware, minimizing labor and maximizing efficiency.</p>
+                        <h6 class="fw-bold mt-4">Control System Capabilities:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-app-indicator text-info me-2"></i> **Mobile Command:** Full system control via iOS and Android apps.</li>
+                            <li><i class="bi bi-plug-fill text-danger me-2"></i> **Universal Integration:** Compatible with virtually all existing valves, pumps, and pivots.</li>
+                            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> **Safety Locks:** Built-in safeguards to prevent accidental over-watering or hardware damage.</li>
+                            <li><i class="bi bi-geo-alt-fill text-success me-2"></i> **Zonal Management:** Configure different irrigation schedules for various soil types and crops.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="uploaded:image_e513d9.png" class="img-fluid rounded-3 shadow-sm mb-3" alt="Irrigation control box and valves in a field.">
+                        <p class="small text-muted">Autonomous Operation: Systems adjust automatically based on real-time sensor data.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="MonitoringModal" tabindex="-1" aria-labelledby="MonitoringModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold" id="MonitoringModalLabel">Full Details: Remote Monitoring</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="lead">Our centralized dashboard provides a single, intuitive source for every metric across your entire operation.</p>
+                        <h6 class="fw-bold mt-4">Monitoring Features:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-bell-fill text-info me-2"></i> **Custom Alerts:** Notifications for critical events like low moisture or pressure drops.</li>
+                            <li><i class="bi bi-map-fill text-danger me-2"></i> **Multi-Farm View:** Easily manage data and systems across multiple geographical locations.</li>
+                            <li><i class="bi bi-lock-fill text-warning me-2"></i> **Data Security:** Enterprise-grade encryption and secure access protocols.</li>
+                            <li><i class="bi bi-file-earmark-bar-graph-fill text-success me-2"></i> **Reporting:** Generate detailed compliance and performance reports instantly.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="uploaded:Screenshot from 2025-10-31 00-53-18.png-4424fe01-685d-46fb-982f-2db542a206ed" class="img-fluid rounded-3 shadow-sm mb-3" alt="Mobile tablet displaying a farm monitoring dashboard.">
+                        <p class="small text-muted">Anywhere Access: Check system status and metrics from your phone or desktop.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
         <section id="predictive-farming" class="py-5 bg-white innovation-section">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4 mb-lg-0">
-                        <img src="./Assets/agriculture" class="img-fluid rounded-3 shadow-lg w-100 h-100" alt="AI Control Interface">
+                        <img src="./Assets/farming" class="img-fluid rounded-3 shadow-lg w-100 h-100" alt="AI Control Interface">
                     </div>
                     <div class="col-lg-6">
                         <p class="text-uppercase fw-bold text-primary mb-2">The Innovation</p>
@@ -475,178 +479,14 @@
                             <h6>High-Resolution Mapping</h6>
                             <p class="small text-muted mb-2">Satellite and drone data integration for precise, zone-specific treatment.</p>
                         </div>
-                        <a href="#" class="btn btn-link text-decoration-none fw-bold text-primary">See Technical Specs <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="soil-diagnostics" class="py-5 soil-diagnostics-section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                        <img src="./Assets/soilnutrition ditector" class="img-fluid rounded-3 shadow-lg w-100 h-100" alt="Advanced Soil Diagnostic Tools">
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <p class="text-uppercase fw-bold text-primary mb-2">Full-Spectrum Ag.</p>
-                        <h3 class="section-title text-start mb-3">Advanced Soil Diagnostics <br> & NPK Tracking</h3>
-                        <p class="section-subtitle">Water is only part of the solution. Our complete system provides ongoing analysis of soil composition, pH, and nutrient levels (Nitrogen, Phosphorus, Potassium) to ensure optimal health.</p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Real-time pH, EC, NPK monitoring</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Organic matter assessment</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Micronutrient analysis</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Custom fertilization recommendations</li>
-                            <li><i class="bi bi-check-circle-fill"></i> **Nutrient Mapping** Generate instant, hyper-accurate NPK maps of your fields.</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary-custom mt-3">Learn More About Soil Health</a>
+                        <a href="#technology-platform" class="btn btn-link text-decoration-none fw-bold text-primary">See Technical Specs <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section class="py-5 text-center">
+<section id="varified" class="py-5 text-center">
     <div class="container">
       <p class="section-subtitle mb-2">OUR IMPACT</p>
       <h2 class="section-title mb-5">Verified Success Stories</h2>
@@ -656,7 +496,7 @@
         <!-- Card 1 -->
         <div class="col-md-4 col-sm-6">
           <div class="card story-card h-100">
-            <img src="./Assets/main" 
+            <img src="./Assets/valley" 
                  alt="Vineyard Case Study" class="story-img">
             <div class="card-body">
               <h5 class="card-title">Napa Valley Vineyard</h5>
@@ -671,7 +511,7 @@
         <!-- Card 2 -->
         <div class="col-md-4 col-sm-6">
           <div class="card story-card h-100">
-            <img src="./Assets/img 9" 
+            <img src="./Assets/wheat" 
                  alt="Wheat Farm Case Study" class="story-img">
             <div class="card-body">
               <h5 class="card-title">Midwest Wheat Operation</h5>
@@ -686,7 +526,7 @@
         <!-- Card 3 -->
         <div class="col-md-4 col-sm-6">
           <div class="card story-card h-100">
-            <img src="./Assets/img6" 
+            <img src="./Assets/pomogranet" 
                  alt="Fruit Orchard Case Study" class="story-img">
             <div class="card-body">
               <h5 class="card-title">Tropical Fruit Orchard</h5>
@@ -701,6 +541,392 @@
       </div>
     </div>
   </section>
+
+  <!-- login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <!-- Modal Title -->
+                    <h5 class="modal-title text-primary fw-bold" id="loginModalLabel">Secure Sign In</h5>
+                    <!-- Close button -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body pt-2">
+                    
+                    <!-- Message Display Area (Inside the modal body) -->
+                    <div id="loginMessage" class="mb-3">
+                        <!-- Placeholder for success/error alerts -->
+                    </div>
+
+                    <form id="loginForm" onsubmit="return handleLogin(event)">
+                        <!-- Email Input -->
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control rounded-2" id="inputEmail" placeholder="name@example.com" required>
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control rounded-2" id="inputPassword" required>
+                        </div>
+
+                        <!-- Remember Me Checkbox -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+
+                        <!-- Submit Buttons -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-2">Sign in</button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mt-2" onclick="displayMessage('The forgot password link would typically send a reset email.', 'info')">Forgot Password?</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- This is our agricultural website -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

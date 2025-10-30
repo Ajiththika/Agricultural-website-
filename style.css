@@ -43,6 +43,7 @@ a:hover {
 /* --- Navigation Bar --- */
 .navbar {
     border-bottom: 1px solid var(--border-color);
+    border-radius: 10px;
 }
 .navbar-brand {
     font-size: 1.5rem;
