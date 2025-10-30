@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agriculture</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
@@ -196,154 +197,137 @@
 
 
 
-
-
-            <!-- Technology Section (Image/Text Split - Focus on AI) -->
-        <section id="technology" class="technology-split">
-            <div class="container py-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <!-- Placeholder for a sleek, modern device image/screenshot -->
-                        <div class="image-placeholder-tech p-5 text-center">
-                            <i class="fas fa-robot fa-5x text-secondary opacity-50 mb-3"></i>
-                            <p class="text-secondary fs-5">AI Control System Interface Preview</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 ps-lg-5">
-                        <span class="text-uppercase fw-bold text-primary">THE INNOVATION</span>
-                        <h2 class="display-5 fw-bold mt-2 mb-4">Beyond Irrigation: Predictive Farming</h2>
-                        <p class="lead mt-4 text-secondary">We don't just react to the weather; we predict the exact physiological needs of your crops 7 days in advance using proprietary deep-learning models trained on exabytes of agricultural data.</p>
-                        
-                        <div class="d-flex align-items-start mt-4 mb-3">
-                            <div class="icon-circle me-3"><i class="fas fa-chart-line"></i></div>
-                            <div>
-                                <h6 class="fw-bold mb-0 pt-1">Deep Learning Optimization</h6>
-                                <small class="text-secondary">Trained on over 1 million acres of farmland data for maximum efficiency.</small>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-start mb-3">
-                            <div class="icon-circle me-3"><i class="fas fa-satellite-dish"></i></div>
-                            <div>
-                                <h6 class="fw-bold mb-0 pt-1">High-Resolution Mapping</h6>
-                                <small class="text-secondary">Satellite and drone data integration for precise, zone-specific treatment.</small>
-                            </div>
-                        </div>
-
-                        <a href="#contact" class="btn custom-btn-primary mt-4">See Technical Specs</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Advanced Solutions Section (Image/Text Split) -->
-        <section id="solutions" class="solutions-split bg-light">
-            <div class="container py-5">
-                <div class="row align-items-center flex-row-reverse">
-                    <div class="col-lg-6 mb-5 mb-lg-0 ps-lg-5">
-                        <img src="Screenshot from 2025-10-29 20-29-16.png-00c41f9d-1e27-4830-87c5-b7d1fae4cb53" class="img-fluid solution-image" alt="Advanced Soil Diagnostic Tools">
-                    </div>
-                    <div class="col-lg-6 pe-lg-5">
-                        <span class="text-uppercase fw-bold text-primary">FULL-SPECTRUM AG.</span>
-                        <h2 class="display-5 fw-bold mt-2 mb-4">Advanced Soil Diagnostics & NPK Tracking</h2>
-                        <p class="lead mt-4 text-secondary">Water is only part of the solution. Our complete system provides ongoing analysis of soil composition, pH, and nutrient levels (Nitrogen, Phosphorus, Potassium) to ensure optimal health.</p>
-                        
-                        <ul class="list-unstyled solution-list mt-4">
-                            <li class="d-flex align-items-start mb-3"><i class="fas fa-flask text-primary me-3 mt-1"></i> <div> **Nutrient Mapping:** Generate instant, hyper-accurate NPK maps of your fields.</div></li>
-                            <li class="d-flex align-items-start mb-3"><i class="fas fa-map-marked-alt text-primary me-3 mt-1"></i> <div> **Variable Rate Application:** Integrate with your existing machinery for optimized fertilizer dosing.</div></li>
-                            <li class="d-flex align-items-start mb-3"><i class="fas fa-sun text-primary me-3 mt-1"></i> <div> **Microclimate Analysis:** Correlate soil data with localized weather patterns to prevent fungal growth.</div></li>
-                        </ul>
-                        <a href="#portfolio" class="btn custom-btn-secondary mt-4">Explore Our Methodology</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio/Case Studies Section -->
-        <section id="portfolio" class="py-5 portfolio-section">
-            <div class="container py-5">
+        <!-- Our Technology Platform (Section 4 from Image 4) -->
+         <section id="technology" class="py-5">
+            <div class="container">
                 <div class="text-center mb-5">
-                    <span class="text-uppercase fw-bold text-primary">OUR IMPACT</span>
-                    <h2 class="display-5 fw-bold mt-2">Verified Success Stories</h2>
+                    <h2 class="section-title">Our Technology Platform</h2>
+                    <div class="section-separator"></div>
                 </div>
-                <div class="row g-5">
-                    <!-- Case Study 1 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-card">
-                            <img src="Screenshot from 2025-10-29 20-29-10.jpg-3bbb11a5-4877-45b8-9370-51ac11bd4eca" class="img-fluid" alt="Vineyard Case Study">
-                            <div class="p-4">
-                                <h5 class="fw-bold text-dark">Napa Valley Vineyard</h5>
-                                <p class="text-secondary mb-3">35% more consistent grape quality due to precise water stress management in a delicate microclimate.</p>
-                                <a href="#" class="fw-bold text-decoration-none">Read Full Report <i class="fas fa-external-link-alt ms-1"></i></a>
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <ul class="nav nav-pills mb-3 justify-content-center justify-content-lg-start" id="techTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="smartSensors-tab" data-bs-toggle="pill" data-bs-target="#smartSensors" type="button" role="tab" aria-controls="smartSensors" aria-selected="true">Smart Sensors</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="aiAnalytics-tab" data-bs-toggle="pill" data-bs-target="#aiAnalytics" type="button" role="tab" aria-controls="aiAnalytics" aria-selected="false">AI Analytics</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="controlSystems-tab" data-bs-toggle="pill" data-bs-target="#controlSystems" type="button" role="tab" aria-controls="controlSystems" aria-selected="false">Control Systems</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="remoteMonitoring-tab" data-bs-toggle="pill" data-bs-target="#remoteMonitoring" type="button" role="tab" aria-controls="remoteMonitoring" aria-selected="false">Remote Monitoring</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-3" id="techTabsContent">
+                            <div class="tab-pane fade show active" id="smartSensors" role="tabpanel" aria-labelledby="smartSensors-tab">
+                                <h4 class="fw-bold mb-3">Precision Soil & Crop Monitoring</h4>
+                                <p class="text-muted">Our wireless sensor network provides real-time data on soil moisture, temperature, salinity, and crop health at multiple depths across your fields.</p>
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Multi-depth soil moisture sensing</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Canopy temperature monitoring</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Wireless data transmission</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> 3+ year battery life</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary-custom mt-3">Request Demo</a>
+                            </div>
+                            <div class="tab-pane fade" id="aiAnalytics" role="tabpanel" aria-labelledby="aiAnalytics-tab">
+                                <h4 class="fw-bold mb-3">AI-Powered Data Interpretation</h4>
+                                <p class="text-muted">Leverage advanced machine learning algorithms to transform raw sensor data into actionable insights, predicting crop needs and optimizing irrigation schedules.</p>
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Predictive irrigation scheduling</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Disease and pest early detection</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Nutrient deficiency analysis</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Yield forecasting</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary-custom mt-3">Learn More</a>
+                            </div>
+                            <div class="tab-pane fade" id="controlSystems" role="tabpanel" aria-labelledby="controlSystems-tab">
+                                <h4 class="fw-bold mb-3">Automated & Remote Control</h4>
+                                <p class="text-muted">Manage your entire irrigation system from anywhere with our intelligent control units, integrated with sensors and AI for autonomous operation.</p>
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Centralized control dashboard</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Zone-specific irrigation</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Integration with existing infrastructure</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Real-time valve management</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary-custom mt-3">See Features</a>
+                            </div>
+                            <div class="tab-pane fade" id="remoteMonitoring" role="tabpanel" aria-labelledby="remoteMonitoring-tab">
+                                <h4 class="fw-bold mb-3">Anywhere, Anytime Farm Overview</h4>
+                                <p class="text-muted">Access live farm data, system status, and alerts directly from your mobile device or desktop, ensuring peace of mind and proactive management.</p>
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Real-time data visualization</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Customizable alerts and notifications</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Multi-farm management capabilities</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Secure data access</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary-custom mt-3">View Dashboard</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Case Study 2 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-card">
-                            <img src="Screenshot from 2025-10-29 20-29-04.jpg-d19c7849-dfac-448c-aba9-a9637b34cf9a" class="img-fluid" alt="Wheat Farm Case Study">
-                            <div class="p-4">
-                                <h5 class="fw-bold text-dark">Midwest Wheat Operation</h5>
-                                <p class="text-secondary mb-3">Achieved a 58% reduction in irrigation costs during a moderate drought with zero yield loss.</p>
-                                <a href="#" class="fw-bold text-decoration-none">Read Full Report <i class="fas fa-external-link-alt ms-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Case Study 3 -->
-                    <div class="col-md-6 col-lg-4 d-none d-lg-block">
-                        <div class="portfolio-card">
-                            <img src="Screenshot from 2025-10-29 20-28-48.jpg-132506ad-7d77-4d6f-8bd7-9f442395adcb" class="img-fluid" alt="Fruit Orchard Case Study">
-                            <div class="p-4">
-                                <h5 class="fw-bold text-dark">Tropical Fruit Orchard</h5>
-                                <p class="text-secondary mb-3">Improved fruit size and market quality by consistently managing soil salinity and nutrient absorption.</p>
-                                <a href="#" class="fw-bold text-decoration-none">Read Full Report <i class="fas fa-external-link-alt ms-1"></i></a>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                        <!-- Placeholder Image for Technology -->
+                        <img src="https://placehold.co/400x300/A0D0F0/007bff?text=AquaGrow+Technology" class="img-fluid rounded-3 shadow-lg" alt="Technology Platform">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact/CTA Section (Deep Forest Green) -->
-        <section id="contact" class="py-5 contact-section">
-            <div class="container py-5 text-white">
+        <!-- New Section: Beyond Irrigation: Predictive Farming (from Image 9) -->
+         <section id="predictive-farming" class="py-5 bg-white innovation-section">
+            <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
-                        <span class="text-uppercase fw-bold text-primary">CONNECT WITH US</span>
-                        <h2 class="display-5 fw-bold mb-4">Ready to See Your Farm Thrive?</h2>
-                        <p class="lead text-secondary-light">Schedule a free 15-minute consultation to see custom projections for your specific crop and farm size, and start maximizing your returns.</p>
-                        
-                        <div class="contact-info mt-5">
-                            <p><i class="fas fa-phone-alt me-3"></i> **(800) 555-GROW**</p>
-                            <p><i class="fas fa-envelope me-3"></i> **info@aquagrow.com**</p>
-                            <p><i class="fas fa-map-marker-alt me-3"></i> Global HQ, Tech Park, San Jose, CA</p>
-                        </div>
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <!-- Placeholder for AI Control Interface Preview -->
+                        <img src="https://placehold.co/600x400/D0E0F0/007bff?text=AI+Control+Interface+Preview" class="img-fluid rounded-3 shadow-lg" alt="AI Control Interface">
                     </div>
                     <div class="col-lg-6">
-                        <!-- contact-form class has the light gray background style -->
-                        <div class="contact-form p-4 p-md-5 rounded-3">
-                            <h4 class="mb-4 fw-bold">Request a Callback</h4>
-                            <form>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="John Doe" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Farm/Crop Details</label>
-                                    <textarea class="form-control" id="message" rows="4" placeholder="I grow tomatoes on a 50-acre farm, mainly concerned about soil moisture retention." required></textarea>
-                                </div>
-                                <button type="submit" class="btn custom-btn-primary w-100 mt-3">Submit Request</button>
-                            </form>
+                        <p class="text-uppercase fw-bold text-primary mb-2">The Innovation</p>
+                        <h3 class="section-title text-start mb-4">Beyond Irrigation: Predictive Farming</h3>
+                        <p class="mb-4">We don't just react to the weather; we predict the exact physiological needs of your crops 7 days in advance using proprietary deep-learning models trained on exabytes of agricultural data.</p>
+                        <div class="mb-3">
+                            <h6>Deep Learning Optimization</h6>
+                            <p class="small text-muted mb-2">Trained on over 1 million acres of farmland data for maximum efficiency.</p>
                         </div>
+                        <div class="mb-3">
+                            <h6>High-Resolution Mapping</h6>
+                            <p class="small text-muted mb-2">Satellite and drone data integration for precise, zone-specific treatment.</p>
+                        </div>
+                        <a href="#" class="btn btn-link text-decoration-none fw-bold text-primary">See Technical Specs <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-    This is our agricultural website
+        <!-- New Section: Advanced Soil Diagnostics & NPK Tracking (from Image 9) -->
+         <section id="soil-diagnostics" class="py-5 soil-diagnostics-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                        <!-- Placeholder for Advanced Soil Diagnostic Tools -->
+                        <img src="https://placehold.co/600x400/D0E0F0/007bff?text=Advanced+Soil+Diagnostic+Tools" class="img-fluid rounded-3 shadow-lg" alt="Advanced Soil Diagnostic Tools">
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <p class="text-uppercase fw-bold text-primary mb-2">Full-Spectrum Ag.</p>
+                        <h3 class="section-title text-start mb-3">Advanced Soil Diagnostics <br> & NPK Tracking</h3>
+                        <p class="section-subtitle">Water is only part of the solution. Our complete system provides ongoing analysis of soil composition, pH, and nutrient levels (Nitrogen, Phosphorus, Potassium) to ensure optimal health.</p>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> Real-time pH, EC, NPK monitoring</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Organic matter assessment</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Micronutrient analysis</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Custom fertilization recommendations</li>
+                            <li><i class="bi bi-check-circle-fill"></i> *Nutrient Mapping** Generate instant, hyper-accurate NPK maps of your fields.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary-custom mt-3">Learn More About Soil Health</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- This is our agricultural website -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
