@@ -36,3 +36,9 @@ To prevent merge conflicts (like two people changing "line 45" at once), the tea
 This README clearly defines who is responsible for which *component*, which is much safer than trying to track line numbers.
 
 The final piece of your solution is understanding that **"Always use a Branch"** rule. 
+
+## Allocate lines
+Every persons take 200 lines 
+First 200 - Roni
+Second 200 - Ajie
+Next 200 - Riththi
