@@ -223,3 +223,63 @@ a:hover {
       color: #666;
       font-size: 0.95rem;
     }
+    .section-subtitle {
+      color: #6da35d;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #222;
+    }
+
+    .story-card {
+      border: none;
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .story-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .story-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      text-align: left;
+    }
+
+    .card-title {
+      font-weight: 600;
+      color: #222;
+    }
+
+    .card-text {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .read-link {
+      color: #6da35d;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .read-link:hover {
+      text-decoration: underline;
+      color: #5b8f4c;
+    }
+
+    .bi-box-arrow-up-right {
+      font-size: 0.9rem;
+      margin-left: 4px;
+    }
