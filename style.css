@@ -184,3 +184,42 @@ a:hover {
         flex-wrap: wrap;
     }
 }
+.section-title {
+      color: #333;
+      font-weight: 700;
+    }
+
+    .core-value-text {
+      color: #6da35d;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: #6da35d;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-weight: 600;
+      color: #222;
+    }
+
+    .card-text {
+      color: #666;
+      font-size: 0.95rem;
+    }
