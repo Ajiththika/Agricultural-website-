@@ -47,4 +47,4 @@ Next 200 - Riththi
 Using the images in assets folder
 
 ## line 
-**Ajie** Using html line 200 - 327 and css 100 - 245 lines as my code
+**Ajie** Using html line 200 - 327 and css 1 - 222 lines as my code
